@@ -1,0 +1,130 @@
+<section class="profile vh-100 mt-5">
+  <div class="container pt-5">
+    <div class="row">
+
+      <div class="col-md-12 text-end mb-5">
+        <button class="btn btn-info text-white rounded-2" data-bs-toggle="modal" data-bs-target="#addNote">Add Note</button>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+        <div class="note p-2">
+
+          <div class="row">
+            <div class="col-md-12 text-end ">
+              <i class="fas fa-ellipsis-v p-2" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+              <div class="dropdown">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#editNote">Edit<i class="fas fa-pen-square text-info float-end"></i></a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteNote">Delete<i class="fas fa-trash text-danger float-end"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <h2 class="text-center">My Note</h2>
+          <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laborum, voluptas consequatur architecto, labore officiis quis esse quos a nesciunt sed possimus iure, dolore deserunt cum consequuntur eos. Iure, eaque.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============== Add Note Modal ============== -->
+<div class="modal fade" id="addNote" tabindex="-1" aria-labelledby="addNoteLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h4 class="modal-title" id="addNoteLabel">Add Notes</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <input class="form-control" type="text" placeholder="Title">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" placeholder="Add Description" id="" cols="30" rows="10"></textarea>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info  text-white ">Add Note</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ============== Add Note Modal End ============== -->
+
+<!-- ============== Delete Modal ============== -->
+<div class="modal fade" id="deleteNote" tabindex="-1" aria-labelledby="deleteNote" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h4 class="modal-title" id="deleteNote">Are You Sure ?</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h5 class="text-info">Do You Really Want To Delete ? <br>
+                process Want Be Undone
+              </h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger">Delete</button>
+        <button type="button" class="btn btn-info text-white"  data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ============== Delete Modal End ============== -->
+
+<!-- ============== Edit Modal ============== -->
+<div class="modal fade" id="editNote" tabindex="-1" aria-labelledby="editNote" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h4 class="modal-title" id="editNote">Edit Notes</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <input class="form-control" type="text" placeholder="Title">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" placeholder="Add Description" id="" cols="30" rows="10"></textarea>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info  text-white ">Save Changes</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ============== Edit Modal End ============== -->

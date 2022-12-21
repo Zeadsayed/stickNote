@@ -1,0 +1,14 @@
+.profile{
+  background-color: rgb(83, 82, 82);
+
+}
+
+.note{
+  min-height: 200px;
+  background-color: #cfc;
+}
+
+.fas{
+  font-size: 20px;
+  cursor: pointer;
+}
